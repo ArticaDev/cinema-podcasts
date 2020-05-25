@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <div class="container" style="height: 100vh;"><audio class="fixed-top" controls="" style="width: 100%;opacity: 1;filter: grayscale(0%);"></audio>
+        <!-- Start: Navbar -->
         <div class="row d-flex flex-row" style="margin-top: 54px;">
             <nav class="navbar navbar-light navbar-expand-md shadow-none flex-column order-1" style="padding: 0px;">
                 <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -31,21 +34,24 @@
                 </div>
             </nav>
         </div>
-        <div class="row d-flex flex-row">
-            <div class="col-xl-4 d-flex flex-column align-self-start justify-content-xl-end"><form class="form-inline d-flex justify-content-center md-form form-sm mt-0 mb-0">
+        <!-- End: Navbar -->
+        <!-- Start: Content -->
+        <div>
+            <div class="row d-flex flex-row">
+                <div class="col-xl-4 d-flex flex-column align-self-start justify-content-xl-end"><form class="form-inline d-flex justify-content-center md-form form-sm mt-0 mb-0">
   <i class="fas fa-search" aria-hidden="true"></i>
   <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Pesquisar"
     aria-label="Search">
 </form></div>
-            <div class="col" style="height: 0px;;"></div>
-            <div class="col d-flex flex-column align-self-start justify-content-xl-center align-items-xl-end"><select class="browser-default custom-select mb-0">
+                <div class="col" style="height: 0px;;"></div>
+                <div class="col d-flex flex-column align-self-start justify-content-xl-center align-items-xl-end"><select class="browser-default custom-select mb-0">
   <option selected>Categoria</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select></div>
-        </div>
-        <!-- Start: Rows --><div class="row row-cols-1 row-cols-md-3 mt-4">
+            </div>
+            <!-- Start: Rows --><div class="row row-cols-1 row-cols-md-3 mt-4">
     <!-- Card -->
   <div class="col mb-4">
     <div class="card h-100">
@@ -230,7 +236,32 @@
     
     
 </div>
-        <!-- End: Rows --><a class="d-block btn btn-dark" href="#" style="width: 235px;margin-right: auto;margin-left: auto;margin-top: 3%;margin-bottom: 3%;">VER TODOS OS EPISÓDIOS</a></div>
+            <!-- End: Rows --><a class="d-block btn btn-dark" href="#" style="width: 235px;margin-right: auto;margin-left: auto;margin-top: 3%;margin-bottom: 3%;">VER TODOS OS EPISÓDIOS</a></div>
+        <!-- End: Content -->
+        <!-- Start: footer -->
+        <div class="row d-flex flex-row" style="margin-top: 5%;margin-bottom: 3%;">
+            <div class="col d-flex flex-column align-items-xl-center">
+                <footer class="d-flex flex-column align-items-center">
+                    <!-- Start: Links -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/ocinemae" style="color: rgb(61,61,61);"><i class="fab fa-facebook-f" style="font-size: 24px;"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/ocinema_e/" style="color: rgb(61,61,61);"><i class="fab fa-instagram" style="font-size: 24px;"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/ocinemae_" style="color: rgb(61,61,61);"><i class="fab fa-twitter" style="font-size: 24px;"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCPjH3hgrozwR4SEt-AjhhIg" style="color: rgb(61,61,61);"><i class="fab fa-youtube" style="font-size: 24px;"></i></a></li>
+                    </ul>
+                    <!-- End: Links -->
+                    <!-- Start: Links -->
+                    <ul class="list-inline" style="font-size: 13px;">
+                        <li class="list-inline-item"><a style="color: rgb(61,61,61);" href="index.html">Home</a></li>
+                        <li class="list-inline-item"><a href="episodios.html" style="color: rgb(61,61,61);">Episódios</a></li>
+                        <li class="list-inline-item"><a href="https://ocinemae.com.br/" style="color: rgb(61,61,61);">O Cinema É</a></li>
+                        <li class="list-inline-item"><a href="http://dragao.ocinemae.com.br/" style="color: rgb(61,61,61);">O Despertar do Dragão</a></li>
+                    </ul>
+                    <!-- End: Links --><a class="d-flex justify-content-center justify-content-xl-center" href="https://articadev.github.io/" style="color: rgb(67,67,67);margin-top: 2%;font-size: 13px;">Desenvolvido por Artica&nbsp;© - 2020<br></a></footer>
+            </div>
+        </div>
+        <!-- End: footer -->
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
