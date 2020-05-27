@@ -24,6 +24,11 @@
   }
 }
 
+.player{
+  
+}
+
+
 .navbar-episodes {
   /*background-color: #30373e;*/
 }
@@ -165,15 +170,45 @@
 
 }
 .playBtn {
+  opacity: 100%;
+  color: black;
+    cursor: pointer;
     position: absolute;
-    width: 96px;
-    height: 96px;
+    width: 64px;
+    height: 64px;
     left: 50%;
     top: 50%;
-    margin-left: -48px; /*half of the width */
-    margin-top: -48px; /*half of the height */
-
+    margin-left: -32px; /*half of the width */
+    margin-top: -32px; /*half of the height */
+    transition: 1s;
 }
+
+.playBtn:hover{
+  color: white;
+    opacity: 100%;
+    transition: 1s;
+}
+
+#more{
+  width: 150px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#description{
+  text-align: center;
+  margin: 2vh;
+}
+
+
 #thumbnail img{
-  filter: blur(1px) grayscale(60%);
+  filter: blur(4px);
+  transition: 1s;
+}
+
+#thumbnail img:hover{
+  filter:blur(1px);
+  transition: 1s;
 }
