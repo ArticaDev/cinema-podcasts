@@ -192,9 +192,11 @@
     position: relative;
 
 }
+
 .playBtn {
+  display: none;
   opacity: 100%;
-  color: black;
+  color: white;
     cursor: pointer;
     position: absolute;
     width: 64px;
@@ -204,6 +206,7 @@
     margin-left: -32px; /*half of the width */
     margin-top: -32px; /*half of the height */
     transition: 1s;
+    border: 10px;
 }
 
 .playBtn:hover{
@@ -227,11 +230,11 @@
 
 
 #thumbnail img{
-  filter: blur(4px);
+  filter: blur(0px);
   transition: 1s;
 }
 
 #thumbnail img:hover{
-  filter:blur(1px);
+  filter:blur(2.5px);
   transition: 1s;
 }

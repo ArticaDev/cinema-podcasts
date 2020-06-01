@@ -32,7 +32,6 @@
               <img   class="card-img-top " src="<?php echo $thumbnails[$key];?>"
                  alt="Card image cap">
                  </a>
-              <i  class="playBtn fa-4x far  fa-play-circle"></i>
            </div>
 
             <!-- Descricao do podcast -->
@@ -60,4 +59,3 @@
 
 </div>
       <a id="see-more" class="d-block btn btn-dark" href="#" style="width: 235px;margin-right: auto;margin-left: auto;margin-top: 3%;margin-bottom: 3%;">VER TODOS OS EPISÓDIOS</a></div>
-  
