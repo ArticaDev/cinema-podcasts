@@ -4,7 +4,7 @@ $(function() {
     if (ww > 460 && ww <1200) {
         $('#img-player').hide();
         $('#playerFrame').attr("style","");
-        $('#playerFrame').attr("width","1000");
+        $('#playerFrame').attr("width",ww);
         $('#playerFrame').attr("height","300");
     };
 
