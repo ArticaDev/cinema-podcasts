@@ -23,12 +23,12 @@
 <div class="container" style="height: 100vh;margin-top: 0px;">
 <!-- <iframe id="playerFrame" src="https://castbox.fm/app/castbox/player/id2886716/id268655841?v=8.22.10&autoplay=0&hide_list=1" scrolling="yes" frameborder="0" width="100%" height="00"></iframe> -->
     <!-- Start: Navbar -->
-    <div class="row d-flex flex-row" style="margin-top: 8vh;">
+    <div class="row d-flex flex-row" style="margin-top: 2vh; margin-bottom:2vh">
         <nav class="navbar navbar-light navbar-expand-md shadow-none flex-column order-1" style="padding: 0px;">
             <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="inicio" style="margin-left: -6px;">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="inicio">Home</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="episodios">Episódios</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="https://ocinemae.com.br/">O Cinema É</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="http://dragao.ocinemae.com.br/">O Despertar do Dragão</a></li>
