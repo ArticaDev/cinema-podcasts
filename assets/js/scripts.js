@@ -1,4 +1,12 @@
 $(function() {
+	
+    var ww = document.body.clientWidth;
+    if (ww > 460 && ww <1200) {
+        $('#img-player').hide();
+        $('#playerFrame').attr("style","");
+        $('#playerFrame').attr("width","1000");
+        $('#playerFrame').attr("height","300");
+    };
 
 	$( "body" ).on('click','#more',function() {
 	   
