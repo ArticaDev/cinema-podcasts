@@ -17,7 +17,7 @@
                         <!-- End: Links -->
                         </div>
                         <div class="col-xl-3 text-monospace d-flex flex-column justify-content-xl-center">
-                            <p class="text-center" style="font-size: .8em;">DURAÇÃO: <?php echo get_duration($duration); ?></p></p>
+                            <p class="text-center pt-2" style="font-size: .8em;">DURAÇÃO: <?php echo get_duration($duration); ?></p></p>
                         </div>
                         <div class="col-xl-6 d-flex flex-column justify-content-xl-center">
                             <p class="text-monospace text-center" style="font-size: .8em;">PARTICIPANTES: <?php  echo get_participantes($entries->description); ?></p>
@@ -56,6 +56,7 @@
 
                 </div>
             </div>
+
             <div class="col mt-5">
 <div class="fb-comments" data-colorscheme="light" data-href="<?php echo $page_link;?>" data-numposts="5" data-width="100%"></div>
 

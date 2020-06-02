@@ -22,6 +22,10 @@
         }else{
             $thumbnail = $thumbnail[1];
             $offset=1; 
+            $last_bit = explode('/',$_SERVER['REQUEST_URI']); 
+             if(end($last_bit)==''){
+               $page_link .='inicio';
+            }
             $page_link .= '?episodio='.rawurlencode($entries->title);
         }
 
