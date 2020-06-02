@@ -58,4 +58,6 @@
 
 
 </div>
+<?php if(count($entries)>6):?>
       <a id="see-more" class="d-block btn btn-dark" href="#" style="width: 235px;margin-right: auto;margin-left: auto;margin-top: 3%;margin-bottom: 3%;">VER TODOS OS EPISÓDIOS</a></div>
+<?php endif; ?>
