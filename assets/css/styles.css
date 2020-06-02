@@ -12,8 +12,14 @@
 order:1;
   }
   .desc{
-    margin-top:-10%;
+    margin-top:-20%;
     order:2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desc{
+    margin-top:9%;
   }
 }
 
