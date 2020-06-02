@@ -12,15 +12,22 @@
         $entries = array();
         $durations = array();
         $thumbnails = array();
-        $termo = isset($_GET['pesquisa']) ? strtolower($_GET['pesquisa']) : '';
-        $entries = array_merge($entries, $xml->xpath("//item//*[contains(translate(text(), 'ABCDEFGHJIKLMNOPQRSTUVWXYZ', 'abcdefghjiklmnopqrstuvwxyz'), '$termo')]/parent::*"));
-        $durations = array_merge($durations, $xml->xpath("//itunes:duration"));
-        $thumbnails = array_merge($thumbnails, $xml->xpath("//itunes:image/@href"));
 
+        if(isset($_GET['pesquisa'])){
+           $termo = strtolower($_GET['pesquisa']);
+           $thumb_offset = $offset;
+        }else{
+           $termo = '';
+           $thumb_offset = $offset+1;
+        }
+
+        $entries = array_merge($entries, $xml->xpath("//item//*[contains(translate(text(), 'ABCDEFGHJIKLMNOPQRSTUVWXYZ', 'abcdefghjiklmnopqrstuvwxyz'), '$termo')]/parent::*"));
+        $durations =  $xml->xpath("//itunes:duration[preceding-sibling::*[contains(translate(text(), 'ABCDEFGHJIKLMNOPQRSTUVWXYZ', 'abcdefghjiklmnopqrstuvwxyz'), '$termo')]]");
+        $thumbnails = $xml->xpath("//itunes:image[preceding-sibling::*[contains(translate(text(), 'ABCDEFGHJIKLMNOPQRSTUVWXYZ', 'abcdefghjiklmnopqrstuvwxyz'), '$termo')]]/@href");
 
         $entries = array_slice($entries, $offset, $limit);
         $durations = array_slice($durations, $offset, $limit);
-        $thumbnails = array_slice($thumbnails, 1, $limit);
+        $thumbnails = array_slice($thumbnails, $thumb_offset, $limit);
         
         function get_duration($duration){
           
