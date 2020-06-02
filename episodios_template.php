@@ -28,7 +28,7 @@
 
            <!-- thumbnail com botao play -->
            <div id="thumbnail" class="thumbContainer">
-             <a href="inicio?episodio=<?php echo $entry->title ;?>">
+             <a href="inicio?episodio=<?php echo rawurlencode($entry->title) ;?>">
               <img   class="card-img-top " src="<?php echo $thumbnails[$key];?>"
                  alt="Card image cap">
                  </a>

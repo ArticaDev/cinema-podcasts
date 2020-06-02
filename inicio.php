@@ -1,5 +1,7 @@
 <?php 
     include('header_template.php');
+    $page_link ="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
 
     $feed = "https://rss.castbox.fm/everest/c5f5b70a60664f15b79bbe1127cb5acb.xml";
 
@@ -19,8 +21,11 @@
             $offset=0;
         }else{
             $thumbnail = $thumbnail[1];
-            $offset=1;
+            $offset=1; 
+            $page_link .= '?episodio='.rawurlencode($entries->title);
         }
+
+
 
         $id =  $xml->xpath("//castbox:tid[preceding-sibling::*[contains(translate(text(), 'ABCDEFGHJIKLMNOPQRSTUVWXYZ', 'abcdefghjiklmnopqrstuvwxyz'), '$termo')]]")[0];
 

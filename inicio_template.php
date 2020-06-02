@@ -1,4 +1,5 @@
 <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0"></script>
     <div class="container d-flex flex-column">
         <div class="row d-flex flex-row">
             <div class="col-xl-7 d-flex flex-column desc">
@@ -42,7 +43,7 @@
 
                           <li class="list-group-item">
                               <div class="row d-flex flex-row">
-                                  <div class="col-xl-2 d-flex flex-column align-items-center justify-content-xl-center align-items-xl-center recent"><button onclick="location.href='inicio?episodio=<?php echo $entry->title ;?>'"class="btn shadow-none" type="button" style="height: 100%;"><i class="fa fa-play-circle" style="font-size: 50px;"></i></button></div>
+                                  <div class="col-xl-2 d-flex flex-column align-items-center justify-content-xl-center align-items-xl-center recent"><button onclick="location.href='inicio?episodio=<?php echo rawurlencode($entry->title) ;?>'"class="btn shadow-none" type="button" style="height: 100%;"><i class="fa fa-play-circle" style="font-size: 50px;"></i></button></div>
                                   <div class="col d-flex flex-column">
                                       <h5><strong><?php echo $entry->title;?></strong></h5>
                                       <p style="font-weight:300;"><?php echo explode('PARTICIPANTES',strip_tags($entry->description))[0];?></p>
@@ -55,9 +56,9 @@
 
                 </div>
             </div>
-            <div class="col">
-              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0%22%3E"></script>
-              <div class="fb-comments" data-colorscheme="dark" data-href="http://localhost" data-numposts="5" data-width=""></div>
+            <div class="col mt-5">
+<div class="fb-comments" data-colorscheme="light" data-href="<?php echo $page_link;?>" data-numposts="5" data-width="100%"></div>
+
             </div>
         </div>
     </div>
