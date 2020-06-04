@@ -1,0 +1,50 @@
+* {
+  color: white!important;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url("../../assets/img/Polígono%203.svg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: top right;
+  }
+}
+
+
+body{
+  background-color: #121212!important;
+}
+
+.card-body{
+  background-color: #121212!important;
+}
+
+#description{
+  background-color: #121212!important;
+}
+
+.card{
+  background-color:transparent;
+}
+
+
+.navbar.navbar-light.navbar-expand-md.shadow-none.flex-column.order-1{
+  padding: 0px;
+  background-color: transparent!important;
+}
+
+.list-group-item{
+  background-color: transparent!important;
+}
+
+
+.view overlay{
+  background-color: transparent!important;
+}
+
+/*
+https://images-na.ssl-images-amazon.com/images/I/51AZqahsKQL.png
+https://www.pngitem.com/pimgs/m/531-5317750_logo-deezer-deezer-music-logo-black-and-white.png
+
+*/

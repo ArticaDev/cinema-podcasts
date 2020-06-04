@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/stylesdark.css">
 </head>
 
 <body>
@@ -33,6 +34,8 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="episodios">Episódios</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="https://ocinemae.com.br/">O Cinema É</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="http://dragao.ocinemae.com.br/">O Despertar do Dragão</a></li>
+                        <li role="presentation" class="nav-item"><a class="nav-link" href=""><i class="far fa-moon-o" style="font-size:20px;"></i></a></li>
+                        <li role="presentation" class="nav-item"><a class="nav-link" href=""><i class="fas fa-sun-o" style="font-size:20px;"></i></a></li>
                     </ul>
                 </div>
             </div>
