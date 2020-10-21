@@ -1,4 +1,4 @@
-<div class="row d-flex flex-row" style="margin-top: 5%;margin-bottom: 3%;">
+<div class="row d-flex flex-row justify-content-center" style="margin-top: 5%;margin-bottom: 3%;">
             <div class="col d-flex flex-column align-items-xl-center">
                 <footer class="d-flex flex-column align-items-center">
                     <!-- Start: Links -->
