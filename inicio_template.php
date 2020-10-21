@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="row" id="row-recent" style="margin-top: 20vh; margin-bottom: 10vh">
+            <div class="row" id="row-recent" style="margin-top: 10vh; margin-bottom: 10vh">
                 <div class="col">
                     <h4><strong>Episódios Recentes</strong></h4>
                     <ul class="list-group" style="margin-top: 5vh">
