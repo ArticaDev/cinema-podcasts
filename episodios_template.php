@@ -8,12 +8,11 @@
     aria-label="Search">
 </form></div>
                 <div class="col" style="height: 0px;;"></div>
-<!--                 <div class="col d-flex flex-column align-self-start justify-content-xl-center align-items-xl-end" id="categories"><select class="browser-default custom-select mb-0">
-  <option selected>Categoria</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select></div> -->
+               <div class="col d-flex flex-column align-self-start justify-content-xl-center align-items-xl-end" id="categories"><select class="browser-default custom-select mb-0">
+  <option selected>Todos os episódios</option>
+  <option value="1">Roleta Cinéfila</option>
+  <option value="2">Episódio Especial</option>
+</select></div>
             </div>
             <!-- Start: Rows --><div id="eps" class="row row-cols-1 row-cols-md-3 mt-4">
     <!-- Card -->
